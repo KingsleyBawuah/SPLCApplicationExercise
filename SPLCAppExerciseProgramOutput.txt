@@ -1,0 +1,35 @@
+C:\Users\King\PycharmProjects\SPLCAppExercise\venv\Scripts\python.exe C:/Users/King/PycharmProjects/SPLCAppExercise/SplcAppExercise.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\King\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+-----------------------MIKE CERNOVICH -- PROFILE INFORMATION------------------------ 
+The number of words for this article: 
+4125
+The three most common values used in this Extremist profile are: 
+cernovich
+rape
+alt-right
+--------------ANDREW ANGLIN -- PROFILE INFORMATION------------------- 
+The number of words for this article: 
+3714
+The three most common values used in this Extremist profile are: 
+anglin
+daily
+stormer
+----------------SHARED PROFILE INFORMATION-------------
+The three most common values used in both Extremist profiles are: 
+white
+daily
+people
+----------------MIKE CERNOVICH -- PROFILE INFORMATION -- IN THEIR OWN WORDS SECTION--------------- 
+The three most common values used in this Extremist profile are: 
+pussy
+twitter
+rape
+ --------------ANDREW ANGLIN -- PROFILE INFORMATION-- IN THEIR OWN WORDS SECTION------------------ 
+The three most common values used in this Extremist profile are: 
+hitler
+april
+want
+
+Process finished with exit code 0
