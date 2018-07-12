@@ -1,3 +1,7 @@
+# Title: Data Exercise for SPLC Canidates (Functions).
+# Description: Includes the functions i wrote to support the main exercise program. Moved functions here for cleaner code.
+# Written by: Kingsley Bawuah
+# Date: 06/24/18
 from urllib.request import urlopen as uRequest  # Importing HTML client
 from bs4 import BeautifulSoup as parser  # Importing Parsing Library.
 import nltk  # Importing Natural Language Toolkit
@@ -7,7 +11,7 @@ from collections import Counter  # Importing Counter library.
 
 
 # Function Name : wordCountDisplay
-# Function Parameters : List
+# Function Parameters : List of tokens
 # Function Description : This function displays the number of elements in a list
 # Function Returns: Nothing.
 def wordCountDisplay(tokenList):
@@ -56,9 +60,9 @@ def removeStopWords(tokenList):
 
 
 # Function Name : tokenizerList
-# Function Parameters : String
-# Function Description :
-# Function Returns:
+# Function Parameters : String of text from a web-page
+# Function Description : Parses a string into tokens (A.k.a a list of words)
+# Function Returns: The list of tokens
 def tokenizerList(string):
     # Using the regex for all words, NOTE/ISSUE: this will cause hyphenated words to be seperated and the hyphen ignored.
     # Wasn't sure on the specifications for this.
@@ -69,10 +73,10 @@ def tokenizerList(string):
     return tokens
 
 
-# Function Name :
-# Function Parameters :
-# Function Description :
-# Function Returns :
+# Function Name : plotFrequencies
+# Function Parameters : listofTokens and a title for the graph
+# Function Description : This function, graphs the frequency distribution of words in a set of tokenized data.
+# Function Returns : Nothing, a graph is displayed.
 def plotFrequencies(listofTokens, title):
     listofTokens = removeStopWords(listofTokens)
     frequencyDist = nltk.FreqDist(listofTokens)
@@ -94,9 +98,9 @@ def displayCommon3(listofTokens):
         print(word)
 
 
-# Function Name : displayCommon3
-# Function Parameters : List of tokenized text
-# Function Description : This function prints the top 3 most common words in a profile.
+# Function Name : displayshared3
+# Function Parameters : 2 Different lists of tokenized text
+# Function Description : This function prints the top 3 most common words shared between two profiles.
 # Function Returns : Nothing
 def displayshared3(listofTokens, listofTokens2):
     listofTokens = removeStopWords(listofTokens)

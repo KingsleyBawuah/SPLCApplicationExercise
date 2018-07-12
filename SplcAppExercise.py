@@ -11,7 +11,6 @@ from SPLCAppExcerciseFunctions import displayCommon3
 from SPLCAppExcerciseFunctions import displayshared3
 import nltk
 
-
 myUrl_1 = 'https://www.splcenter.org/fighting-hate/extremist-files/individual/mike-cernovich'
 myUrl_2 = 'https://www.splcenter.org/fighting-hate/extremist-files/individual/andrew-anglin'
 nltk.download('stopwords')
